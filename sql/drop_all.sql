@@ -1,0 +1,9 @@
+DROP TABLE ma_action_log;
+DROP TABLE ma_hand_log;
+DROP SEQUENCE log_seq;
+DROP TABLE ma_round;
+DROP TABLE ma_game;
+DROP SEQUENCE game_seq;
+DROP TABLE ma_command_master;
+DROP TABLE ma_user;
+DROP SEQUENCE user_seq;

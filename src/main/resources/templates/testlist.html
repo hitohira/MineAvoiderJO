@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test List</title>
+</head>
+<body>
+	<div>connect to database and get list.</div>
+	<div>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>DATA</th>
+			</tr>
+			<tr th:each="test : ${testList}">
+				<td th:text="${test.id}"></td>
+				<td th:text="${test.data}"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

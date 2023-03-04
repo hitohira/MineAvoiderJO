@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="all" th:href="@{/css/style.css}"/>
+<title>Register</title>
+</head>
+<body>
+	<div class="main">
+		<h1>Register User Information</h1>
+		<div>
+			<span th:unless="${errorMessage}">Your account is registered successfully.</span>
+			<span th:if="${errorMessage}" th:text="'Fail at registeration. ' + ${errorMessage}" class="error-message"></span>
+		</div>
+		<div><a th:href="@{/login}">Go back</a></div>
+	</div>
+</body>
+</html>

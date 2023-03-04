@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" media="all" th:href="@{/css/style.css}"/>
+<meta name="description" content="This is a simple and fantastic PvP puzzle game! Two players try to get cells without mines.">
+<title>Mine Avoder</title>
+</head>
+<body>
+    <div class="main">
+      <h1 >Mine Avoider</h1>
+      <div id="user"></div>
+      <div id="score"></div>
+      <div id="message">Not started</div>
+      <table class="game-field">
+        <tr>
+          <td class="row-head"><div class="pos-info"></div></td>
+          <td><div class="pos-info">A</div></td>
+          <td><div class="pos-info">B</div></td>
+          <td><div class="pos-info">C</div></td>
+          <td><div class="pos-info">D</div></td>
+          <td><div class="pos-info">E</div></td>
+          <td><div class="pos-info">F</div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">1</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">2</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">3</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">4</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">5</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+        <tr>
+          <td class="row-head"><div class="pos-info">6</div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+          <td class="cell"><div class="square"></div></td>
+        </tr>
+      </table>
+      <div class="text-center" id="pass"><button class="button" onclick="action('pass')">Pass</button></div>
+      <div class="text-center" id="next-game"></div>
+      <div class="text-center">
+        <a href="./rule.pdf" target="_blank" rel="noopener noreferrer">rule</a>
+        <a href="./ruleJP.pdf" target="_blank" rel="noopener noreferrer">ルール</a>
+        / <a href="./MAPostmortem/" target="_blank" rel="noopener noreferrer" id="mapm">Postmortem</a>
+      </div>
+    </div>
+</body>
+</html>
